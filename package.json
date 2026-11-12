@@ -41,6 +41,7 @@
         "dev": "cross-env NODE_ENV=dev NODE_OPTIONS='--max-http-header-size=32768' tsx watch --inspect --clear-screen=false lib/index.ts",
         "dev:cache": "cross-env NODE_ENV=production NODE_OPTIONS='--max-http-header-size=32768' tsx watch --clear-screen=false lib/index.ts",
         "eslint": "eslint --cache . --concurrency auto",
+        "feed:digest": "tsx scripts/feed-digest/index.ts",
         "format": "oxlint --type-aware --fix . && oxfmt .",
         "format:check": "oxlint --type-aware . && oxfmt . --check",
         "format:description": "tsx scripts/workflow/format-description.ts",
